@@ -6,7 +6,9 @@ int add();
 int main()
 {
 	system("cls");
-	cout<<add();
+	int sum = add();
+
+	cout<<"The sum is "<<sum;
 }
 int add()
 {

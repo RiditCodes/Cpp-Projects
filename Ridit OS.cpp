@@ -10,13 +10,14 @@ int main()
     string username = "Ridit";
     string user_username;
     string user_password;
+    char end;
 
-    string age = "10";
+    string age = "13";
     string first_name = "Ridit";
     string last_name = "Agarwal";
     string address = "1722,Sector 46,Gurugram";
     string profession = "Student";
-    string grade_class = "6th Researchers";
+    string grade_class = "8th Charaka";
 
     cout<<"RIDIT OS(BETA)\n\n";
     cout<<"Enter Username: ";
@@ -59,11 +60,12 @@ int main()
         cout<<"Address: "<<address<<endl;
         cout<<"Profession: "<<profession<<endl;
         cout<<"Grade and Class: "<<grade_class<<endl<<endl;
-        return 0;
     }
     else
     {
         cout<<"Invalid function";
-        return 0;
     }
+
+    cout<<"Press any key to exit";
+    cin>>end;
 }
