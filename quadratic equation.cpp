@@ -3,7 +3,6 @@
 using namespace std;
 
 int main(){
-
     float a, b, c, x1, x2, discriminant, realPart, imaginaryPart;
     cout<<"Enter coefficients of Quadratic Equation: ";
     cin>>a>>b>>c;

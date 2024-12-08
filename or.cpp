@@ -2,8 +2,7 @@
 #include<cstdlib>
 using namespace std;
 
-int main()
-{
+int main(){
     int num;
     system("cls");
     cout<<"Enter no.: ";
