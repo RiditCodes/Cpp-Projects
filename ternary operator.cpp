@@ -8,4 +8,4 @@ int main(){
     cout<<endl<<"Absolute value of "<<n<<" is ";
     (n<0) ? cout<<-n : cout<<n;
     
-}
+} 
