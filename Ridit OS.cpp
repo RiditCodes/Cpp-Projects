@@ -1,11 +1,9 @@
 #include <iostream>
-#include <cstdlib>
 #include <Windows.h>
 using namespace std;
 
 int main()
 {
-    system("cls");
     string password = "Hello@123";
     string username = "Ridit";
     string user_username;

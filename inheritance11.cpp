@@ -62,8 +62,8 @@ class Instructor:public Teaching, public NonTeaching{
 };
 int main(){
     Instructor obj;
-    cout<<"Enter student details...\n";
+    cout<<"Enter instructor details...\n";
     obj.accept_instructor_details();
-    cout<<"\nStudent details...\n";
+    cout<<"\nInstructor details...\n";
     obj.display_instructor_details();
 }

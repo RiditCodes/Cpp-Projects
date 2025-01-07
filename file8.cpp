@@ -12,3 +12,5 @@ int main(){
 
     file<<"\n"<<str;
 }
+
+//ios::app appends new content to the file
