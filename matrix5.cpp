@@ -10,17 +10,17 @@ int main(){
             cout<<"arr1["<<row<<"]["<<column<<"]: ";
             cin>>arr1[row][column];
         }
-        
     }
+
     cout<<"\nBefore transpose..."<<endl;
-    for (row = 0;row < 2; row++){
+    for (row = 0; row < 2; row++){
         for (column = 0; column < 3; column++){
             cout<<arr1[row][column]<<" ";
         }
         cout<<endl;
     }
 
-    cout<<"The transpose of the matrix is..."<<endl;
+    cout<<"\nThe transpose of the matrix is..."<<endl;
     for (row = 0; row < 3; row++){
         for (column = 0; column < 2; column++){
             arr2[row][column] = arr1[column][row];
