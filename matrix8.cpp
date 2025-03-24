@@ -2,9 +2,9 @@
 using namespace std;
 
 int main(){
-    int matrix1[3][3], matrix2[3][3];
+    int matrix1[2][3], matrix2[3][2], result[2][3];
 
-    for (int i = 0; i < 3; i++){
+    for (int i = 0; i < 2; i++){
         for (int j = 0; j < 3; j++){
             cout<<"Enter the element for matrix1 at position "<<i<<" "<<j<<": ";
             cin>>matrix1[i][j];
@@ -14,7 +14,7 @@ int main(){
     cout<<endl;
 
     for (int i = 0; i < 3; i++){
-        for (int j = 0; j < 3; j++){
+        for (int j = 0; j < 2; j++){
             cout<<"Enter the element for matrix2 at position "<<i<<" "<<j<<": ";
             cin>>matrix2[i][j];
         }
@@ -23,7 +23,7 @@ int main(){
     cout<<endl;
 
     cout<<"Matrix 1: "<<endl;
-    for (int i = 0; i < 3; i++){
+    for (int i = 0; i < 2; i++){
         for (int j = 0; j < 3; j++){
             cout<<matrix1[i][j]<<" ";
         }
@@ -32,7 +32,7 @@ int main(){
 
     cout<<"Matrix 2: "<<endl;
     for (int i = 0; i < 3; i++){
-        for (int j = 0; j < 3; j++){
+        for (int j = 0; j < 2; j++){
             cout<<matrix2[i][j]<<" ";
         }
         cout<<endl;
@@ -40,13 +40,17 @@ int main(){
 
     cout<<"\n";
 
-    if (matrix1[0][0] == matrix2[0][0] && matrix1[1][1] == matrix2[1][1] && matrix1[2][2] == matrix2[2][2]){
-        if (matrix1[0][2] == matrix2[0][2] && matrix1[1][1] == matrix2[1][1] && matrix1[2][0] == matrix2[2][0]){
-            cout<<"The matrices are diagonally equal."<<endl;
-        } else{
-            cout<<"The matrices are not diagonally equal."<<endl;
+    for (int i = 0; i < 2; i++){
+        for (int j = 0; j < 3; j++){
+                result[i][j] = matrix1[i][j] * matrix2[j][i];
         }
-    } else{
-        cout<<"The matrices are not diagonally equal."<<endl;
+    }
+
+    cout<<"The result of the multiplication of the two matrices is: "<<endl;
+    for (int i = 0; i < 2; i++){
+        for (int j = 0; j < 3; j++){
+            cout<<result[i][j]<<" ";
+        }
+        cout<<endl;
     }
 }
