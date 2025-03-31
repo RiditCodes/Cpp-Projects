@@ -8,12 +8,20 @@ int main()
     cout<<"Enter a number: ";
     cin>>num;
     factorial = Factorial(num);
-    cout<<"Factorial of "<<num<<" is: "<<factorial;
+    if (factorial != 1){
+        cout<<"Factorial of "<<num<<" is: "<<factorial;
+    } else{
+        return 0;
+    }
 }
-int Factorial(int n)
-{
+int Factorial(int n){
     if (n > 1)
     {
         return n*Factorial(n-1);
+    }
+    else
+    {
+        cout<<"Numnber can't be less than zero or equal to 1"<<endl;
+        return 1;
     }
 }
