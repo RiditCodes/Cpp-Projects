@@ -21,7 +21,6 @@ int Factorial(int n){
     }
     else
     {
-        cout<<"Numnber can't be less than zero or equal to 1"<<endl;
         return 1;
     }
 }
